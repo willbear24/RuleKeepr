@@ -1,0 +1,13 @@
+.env
+.venv
+.vscode
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Local data
+*.db
+email_log.txt

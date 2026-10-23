@@ -1,0 +1,51 @@
+[
+  {
+    "title": "Monopoly",
+    "min_player": 2,
+    "max_player": 8,
+    "play_time_minutes": "60-180",
+    "rules_filename": "monopoly_rulebook.txt"
+  },
+  {
+    "title": "Scrabble",
+    "min_player": 2,
+    "max_player": 4,
+    "play_time_minutes": "60-90",
+    "rules_filename": "scrabble_rulebook.txt"
+  },
+  {
+    "title": "Scattergories",
+    "min_player": 2,
+    "max_player": 6,
+    "play_time_minutes": "30-45",
+    "rules_filename": "scattergories_rulebook.txt"
+  },
+  {
+    "title": "Settlers of Catan",
+    "min_player": 3,
+    "max_player": 4,
+    "play_time_minutes": "60-90",
+    "rules_filename": "settlers_of_catan_rulebook.txt"
+  },
+  {
+    "title": "Camel Up",
+    "min_player": 3,
+    "max_player": 8,
+    "play_time_minutes": "30-45",
+    "rules_filename": "camel_up_rulebook.txt"
+  },
+  {
+    "title": "Cribbage",
+    "min_player": 2,
+    "max_player": 2,
+    "play_time_minutes": "15-30",
+    "rules_filename": "cribbage_rulebook.txt"
+  },
+  {
+    "title": "Sky Team",
+    "min_player": 2,
+    "max_player": 2,
+    "play_time_minutes": "15-20",
+    "rules_filename": "sky_team_rulebook.txt"
+  }
+]

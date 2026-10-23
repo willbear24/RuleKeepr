@@ -1,0 +1,110 @@
+SCRABBLE
+
+BASIC GAME RULES
+
+This rulebook uses letters followed by a number to indicate the letter and its corresponding score in the game. For example, T1 means the letter T has a score of 1. H4 means H has a score of 4.
+
+CONTENTS
+1 Game Board
+100 Letter Tiles
+4 Tile Racks
+1 Tile Bag
+
+HOW TO PLAY
+100 Letter tiles:
+- There are 98 alphabet tiles with score values indicated by the number next to each letter.
+- There are also two blank tiles - that have no score value - which can be used as any letter desired. Once played, the letter it represents cannot be changed during a game.
+
+SET UP
+Place all the tiles in the tile bag. To determine who goes first, each player takes a tile out of the bag.
+The player with the letter closest to ‘A’ starts. (A blank tile beats the ‘A’.) Return those tiles to the bag
+when done.
+- Each player, in turn, draws seven new tiles and places them on their racks.
+- Use a pen and paper to keep score.
+
+RULES OF PLAY
+Placing the first word
+As the first player, combine two or more of your tiles to form a word and place them on the board to read either across or down with one tile on the centre square (star). Diagonal words aren’t permitted.
+To score, add up all the values of the numbers on the tiles, plus any premium values from using the premium squares.
+For example, Player 1 has A1 E1 I1 T1 R1 N1 R1 on their rack and they play: T1 R1 A1 I1 N1.
+In this case T scores 1 and is doubled to 2 because it is on a Double Letter square; R is 1; A is 1; I is 1; N is 1 = 6. Note: The centre square counts as a Double Word square, so the whole score is doubled to 12 points.
+Complete your turn by giving your score to the scorekeeper.
+At the end of every turn, draw as many new tiles as you’ve played to keep seven tiles on your rack.
+Next Player’s turn
+The second player and then each player in turn plays by adding one or more tiles to tiles already on the board to make new words of two or more letters. The player may also choose to pass or to exchange tiles.
+All tiles played in this and later turns must be in one continuous line up or down.
+If letters touch other letters in adjacent rows, they must form complete words crossword fashion.
+You may not add tiles to various words, or form new words in different parts of the board in the same turn.
+You get the full score for ALL words formed or modified by your play. If more than one word is formed in a single turn, the common letters are counted (with full premium value, when they are on premium squares) in the score for each word.
+
+BOARD Premium Spaces
+There are special premium squares on the board with bonus score values. Their values are printed
+on the board.
+If a word crosses both premium letter and word squares, all the bonus letter values are added up before the complete word score is double or tripled.
+The bonus scores of the premium squares only apply to the turn in which the tiles are placed on them.
+Sometimes a word may cross two premium word squares. The word score is doubled then re-doubled
+- 4 times the complete word score; or tripled and then re-tripled - 9 times the complete word score.
+When a blank is placed on a Triple or Double Word square, the sum of the tiles in the word is doubled
+or tripled even though the blank itself has no score value. When it is placed on a Triple or Double
+Letter square, the value of the blank tile is still zero.
+There are five different ways that new words can be formed:
+1. Adding one or more tiles to the beginning or end of a word already on the board, or to both the
+beginning and end of that word.
+For example, TRAINER becomes STRAINERS.
+The first S is on a Triple Word so the score is 9 x 3 = 27. The Double
+Letter under the A and the Double Word of the centre square do not count.
+2. Placing a word at right angles to a word already on the board. The new word must use one of the
+letters of the word already on the board.
+For example, adding HROB to the T already on the board to make THROB.
+THROB scores 12. (T1, H4, R1 x 3,O1, B3)
+Total 1+4+(1x3)+1+3=12
+3. Placing a complete word parallel to a word already played so that adjoining tiles also form complete words.
+For example, adding HOB also forms HI, ON and BE.
+HOB scores 4 + 1 + (2x3) = 11, HI scores 5, ON scores 2, BE scores
+(2x3) +1 = 7. Total 11+5+2+7 = 25
+In this example, more than one word is formed in the same turn and each word is scored.
+The common letters are counted (with full premium value, when they are on premium squares) in the score for each word.
+4. The new word may also add a letter to an existing word.
+For example, THROBS is played with the S linking onto TRAINER to make STRAINER as well.
+S in STRAINER is on a Triple Word, scoring 8 x 3 = 24, S is also
+on a Triple Word in THROBS (with H on Double Letter) scoring
+15 x 3 = 45 - Totalling 69 points.
+5. The last variation would be to “bridge” two or more letters from two words that are parallel on the
+game board. (This can only happen on the 4th move or later in the game.)
+For example, CO, QUE and T is fitted between an N and an S on the board to make CONQUEST.
+CONQUEST is played for 19 points with Q over the Double Letter for an
+extra 10 points & then tripled to 87 points & then tripled again for a total of 261 points!
+Sometimes a word may cross two premium word squares. The word score is doubled then re-doubled - 4 times the complete word score; or tripled and then re-tripled - 9 times the complete word score!
+
+Exchanging tiles
+You may use your turn to replace any or all of the tiles in your rack. Exchanging tiles counts as a turn.
+
+Passing (missing a turn)
+You may decide to pass your turn, whether or not you can play a word. (Should all players pass twice
+in a row, the game ends.)
+
+Permitted words
+You may play any words listed in a standard English dictionary except those only spelt with an initial capital letter, abbreviations, prefixes and suffixes and words requiring apostrophes and hyphens.
+Once a tile has been placed on the board, it may not be moved unless the word is successfully challenged.
+
+Challenging words
+A word may be challenged by another player by checking a previously agreed upon dictionary. If the word challenged is unacceptable, the player removes those tiles and loses their turn.
+Note: A dictionary or word guide may not be used while a game is in progress to search for words to fit the tiles on your rack.
+
+Added 50-point bonus
+Any player who plays all seven of their tiles in a single turn scores a premium of 50 points in addition to the regular score for the turn. The 50 points are added on AFTER doubling or tripling a word score.
+
+End of the game
+The game ends when
+- all the tiles have been drawn AND one of the players has used all the tiles in their rack
+- when all possible plays have been made
+- all players have passed twice in consecutive turns
+After all the scores are added up, each player’s score is reduced by the sum of their unplayed tiles, and if one player has used all their tiles, their score is increased by the sum of the unplayed tiles of all the other players.
+e.g. If Player one has an X and an A left on their rack at the end of the game, their score is reduced by 9 points. The player who used all their tiles adds 9 points to their final score.
+The player with the highest final score wins!
+
+RULE CLARIFICATIONS
+- The same word can be played more than once in a game.
+- Pluralised words are allowed.
+- The bonus scores of the premium squares only apply to the turn in which the tiles are placed on them.
+When one player has used all their tiles and the tile bag is empty, the game is over. In some games, no player succeeds in using all their tiles. In this case the game continues until all possible moves have been made. If a player is unable to move, they pass their turn.

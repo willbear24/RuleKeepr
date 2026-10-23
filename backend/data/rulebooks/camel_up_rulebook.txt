@@ -1,0 +1,216 @@
+Camel Up: Complete Rules & Gameplay Guide
+
+Camel Up is a chaotic, family-friendly racing and betting game where you try to predict which camel will finish first and which will finish last. The twist is that camels can ride on top of one another, so a camel that moves can carry other camels along with it!
+
+Players don't own or directly control the camels. Instead, you make bets, earn money, and try to profit from the unpredictable race.
+
+This guide covers the core rules of the second edition of Camel Up, including setup, every action, betting, camel movement, money, and winning. If you own the first edition, some components and details differ slightly.
+
+1. The goal of the game
+Win by having the most Egyptian pounds (the game's money) when the race ends.
+
+There are two types of predictions:
+- Leg betting: Predict which camel will be in first or last place at the end of the current leg (a portion of the race).
+- Overall race betting: Predict which camel will finish first or last in the entire race.
+You earn money for correct predictions and can lose money for incorrect ones. Good timing matters just as much as picking the right camel.
+
+2. Understanding the game board
+
+The board contains several important areas:
+- Race track: The numbered spaces around which the camels race.
+- Pyramid: Holds the dice that determine camel movement.
+- Betting tiles: Used to bet on which camel will lead or trail at the end of a leg.
+- Finish line: Once a camel crosses it, the overall race ends.
+- Player area: Where you keep your money, betting cards, and other player pieces.
+- spectator tiles: Special tiles you can place on the track to influence camel movement and earn bonuses.
+Each camel has its own color and matching die. The game uses five racing camels, and each die has the numbers 1, 2, and 3.
+
+3. Setup
+
+1. Place the game board in the middle of the table.
+2. Put all five camels on the starting space, following the board's setup instructions.
+3. Put the five matching dice inside the pyramid.
+4. Shuffle the leg-betting tiles into their designated stacks or displays, according to the board.
+5. Give each player their starting money and their matching player components.
+6. Set out the overall-race betting cards, spectator tiles, and other player pieces.
+7. Choose a starting player using the rulebook's method.
+Each player has a set of camel-color cards for betting on the overall winner and loser. The game also includes pieces used to place bets on the current leg and influence the track.
+
+Important: All five camels start together, but their order in a stack matters. Camels on top of another camel are ahead of the camels beneath them in the stack when their positions are otherwise tied.
+
+4. How a turn works
+On your turn, choose exactly one of four actions. Players take turns clockwise around the table.
+Action 1 — Take a leg-betting ticket:
+Take the top ticket from any camel-color stack on the board. You are betting that camel will be in first place at the end of the current leg.
+- The first ticket taken from a color is worth the most if that camel wins the leg.
+- Later tickets of that color offer lower potential rewards.
+- You can take multiple tickets, even for the same camel.
+
+Action 2 — Place or move your spectator tile
+Place your tile on an eligible empty track space, or move your already-placed tile to another eligible space.
+Choose either the cheering or booing side. These affect camels that land on that space, potentially changing their movement and giving you money.
+
+Action 3 — Roll a camel's movement die
+Take one pyramid ticket, shake the pyramid, and release one die. Move the matching camel forward by the number shown.
+The dice determine which camel moves and how far. You don't choose the camel or its movement result.
+
+Action 4 — Bet on the overall winner or loser
+Secretly place one of your race-betting cards face down on the board's overall-winner or overall-loser betting space.
+You can make these bets throughout the race. Once a card is placed, you cannot take it back or change your selection.
+
+You may perform only one of these actions per turn. For example, you cannot take a betting ticket and roll a die in the same turn.
+
+5. How the camels move
+This is the most important rule to understand, because the camel stacks are what make the game unpredictable.
+The basic movement rules
+1. Take a pyramid ticket and reveal one die from the pyramid.
+2. Move the camel matching that die forward by 1, 2, or 3 spaces.
+3. If the moving camel has other camels sitting on top of it, it carries those camels along.
+4. If the moving camel or its stack lands on a space occupied by another camel or stack, place the moving stack on top of the camels already there.
+Example: stacking camels
+Before movement:
+Green is underneath yellow. Yellow is ahead of green in the stack.
+After movement:
+If green moves, yellow rides along. If the stack lands on another camel, the whole stack goes on top.
+The key rule: the camel that moves carries every camel above it, but not the camels below it.
+Who is ahead when camels share a space?
+When several camels occupy the same space, their vertical order determines their ranking:
+- The camel on top is ahead of every camel below it.
+- The camel at the bottom is behind every camel above it.
+- When a stack moves, all camels carried by the moving camel maintain their relative order.
+So a camel can be ahead of another even if both occupy the same numbered space.
+
+6. The pyramid and the dice
+The pyramid controls the race's random movement.
+- Each of the five racing camels has a matching die.
+- Each die has the values 1, 2, and 3, each appearing twice.
+- Each time you take a pyramid ticket, you reveal one die and move its camel.
+- Once a die has been revealed, it stays out of the pyramid until the next leg.
+- When all the dice have been revealed, the current leg ends and the camels are scored.
+The pyramid tickets are useful because they earn money at the end of the leg, regardless of whether the camel you hoped would move actually helped your predictions.
+Crazy camels in the second edition
+The second edition adds two rogue camels that run in the opposite direction. Their dice use the dark or contrasting movement values, and they can interfere with the racing camels by carrying or rearranging stacks. They are not regular betting targets.
+This means a seemingly safe lead can disappear when a crazy camel moves the wrong stack backward. Follow the movement instructions for the crazy camels printed in your edition's rulebook.
+
+7. spectator tiles: Cheering and Booing
+Your spectator tile can help or hinder camels, depending on which side you use.
+Cheering side: When a camel or camel stack lands on your tile, it moves one extra space forward. You gain 1 Egyptian pound.
+Booing side: When a camel or camel stack lands on your tile, it moves one space backward. You gain 1 Egyptian pound.
+The important placement rules are:
+- Your tile must be placed on an empty space with no camels or other spectator tile.
+- You cannot place it on the first space of the race track.
+- spectator tiles cannot be placed on adjacent spaces.
+- You may move your tile on a later turn, choosing either side.
+- If a stack lands on the tile, the tile's effect applies to the moving stack as a unit.
+- The tile's effect can cause another stack to be joined, so always check the resulting camel order.
+A tile can be a powerful way to influence the race without spending a turn rolling the pyramid.
+
+8. Leg betting: How to win money during the race
+A leg is the period between the start of the race or the last leg scoring and the moment the final pyramid die for that leg is revealed.
+Each camel color has three leg-betting tickets. In the standard rules, their values are 5, 3, and 2 Egyptian pounds, with the 5-pound ticket on top of the stack.
+The earlier you bet on a camel, the better your potential payout.
+Leg-betting payouts
+At the end of a leg, rank the camels from first to last. Then each player scores every leg-betting ticket they collected.
+Your ticket's camel	Your payout
+First place	The value printed on the ticket: 5, 3, or 2
+Second place	+1 pound
+Any other position	−1 pound
+For example, suppose you collected the 5-pound ticket for the green camel:
+- Green finishes first: you gain 5 pounds.
+- Green finishes second: you gain 1 pound.
+- Green finishes third, fourth, or fifth: you pay 1 pound to the bank.
+If you have multiple tickets, score each separately and add the results together. A player can therefore gain or lose money from several different camel predictions in one leg.
+Pyramid-ticket payout
+Every pyramid ticket you collected during the leg earns you 1 Egyptian pound at leg scoring. This is a reliable small reward for helping advance the race.
+
+What happens when a leg ends?
+1. The final die is revealed and its camel moves.
+2. Determine the current first- and second-place camels.
+3. All players score their leg-betting tickets.
+4. Each player receives 1 pound for each pyramid ticket they collected.
+5. Return leg-betting tickets, pyramid tickets, and the dice to their designated places.
+6. Return spectator tiles to their owners.
+7. Begin the next leg, starting with the designated starting player.
+The race continues after leg scoring unless a camel has already crossed the finish line.
+
+9. Betting on the overall winner and loser
+This is separate from leg betting. You're predicting the final result of the entire race rather than the result of one leg.
+On your turn, you can place one of your race-betting cards face down on either:
+- Overall winner: the camel you think will finish first.
+- Overall loser: the camel you think will finish last.
+Your cards remain face down until the game ends. Multiple players can bet on the same camel, and cards are placed in a stack in the order they are played.
+Timing is crucial: The first correct bet is rewarded most generously. Later correct bets receive smaller rewards.
+Overall winner payouts
+Order of your correct bet	Reward
+First	+8 pounds
+Second	+5 pounds
+Third	+3 pounds
+Fourth	+2 pounds
+Fifth or later	+1 pound
+If your card names the wrong camel, you pay 1 pound to the bank.
+The same payout schedule applies to the overall-loser betting stack.
+For example, if you were the first player to bet on the winning camel, you earn 8 pounds. If you were the third player to correctly predict that same camel, you earn 3 pounds.
+You may make multiple overall bets over the course of the game, but each requires a separate turn and a separate card. Once a card is played, you cannot retrieve it, even if the race changes dramatically.
+
+10. Money rules
+The money you earn from bets is what determines the winner.
+- Keep your money in front of you so other players can see your cash.
+- You don't have to reveal your exact total during the game.
+- You can exchange smaller denominations for larger ones with the bank at a one-to-one value.
+- You cannot go below zero money. If you owe money but cannot afford the full payment, you pay what you can and cannot go into debt.
+For example, if you have 0 pounds and lose a bet worth 1 pound, you pay nothing rather than owing the bank.
+
+11. How the game ends
+The game ends immediately when a racing camel unit crosses the finish line. You don't wait for the remaining dice or finish the current round of turns.
+There are two final scoring stages.
+1. Score the final leg. Resolve all outstanding leg-betting tickets and pyramid tickets just as you would at the end of any other leg.
+2. Score the overall winner and loser. Reveal the cards on both betting spaces, starting with the earliest card placed. Pay out correct predictions according to their order, and charge 1 pound for each incorrect prediction.
+3. Count everyone's money. The player with the most Egyptian pounds wins. If players tie, they share the victory.
+How to determine the overall winner and loser
+- Winner: The camel farthest along the track in the direction of the finish line.
+- Loser: The camel furthest behind. If the camel is part of a stack, the camel at the bottom of the stack is considered behind those above it.
+In the second edition, the crazy camels can also affect the finish. If a crazy camel carries racing camels across the finish line in the reverse direction, consult your edition's specific finish-line rule to determine how those camels rank.
+
+12. Quick reference: All four actions
+1. Take a leg-betting ticket
+Predict the leg winner. The payout is 5, 3, or 2 pounds for first place, 1 pound for second, and −1 for any other position.
+2. Place or move a spectator tile
+Use cheering to move a camel stack forward or booing to move it backward. Earn 1 pound when a stack lands on your tile.
+3. Take a pyramid ticket and move a camel
+Reveal one die, move the matching camel, and earn 1 pound for that pyramid ticket at leg scoring.
+4. Bet on the overall winner or loser
+Place one face-down card. Correct predictions earn 8, 5, 3, 2, or 1 pound depending on when the correct card was placed; incorrect cards cost 1 pound.
+
+13: Partnerships 
+In Camel Up (second edition), partnerships are an optional fifth action specifically for games with 6 or more players. They are temporary betting partnerships, not permanent teams. 
+How partnerships work
+1. Choose the partnership action
+On your turn, if your partnership card shows Available, choose another player whose card also shows Available.
+2. Exchange partnership cards
+You and the chosen player exchange cards and flip them to the Partnership side. The other player cannot refuse. You are now partners for the rest of the current leg.
+3. Share one ticket's reward each
+At the end of the leg, each partner may choose one ticket belonging to the other player and copy its reward for their own scoring. This can be a leg-betting ticket or a pyramid ticket.
+4. Reset after scoring
+Once the leg has been scored, return the partnership cards to their original owners with Available facing up. Players can form new partnerships in the next leg.
+Both players keep their own rewards and gain the reward from the one ticket they copy. Neither player takes money away from the other.
+Important partnership rules
+- One ticket each: Each partner can copy the reward of at most one ticket belonging to the other player per leg.
+- You can decline a bad reward: If your partner only has losing tickets, you don't have to copy one.
+- Pyramid tickets count: You can copy a pyramid ticket's +1-pound reward, not just a betting ticket.
+- Partnerships expire every leg: You must use an action to form a partnership again in the next leg.
+- Partnerships don't share overall-race bets: The partnership scoring rule applies to tickets scored at the end of a leg, not the overall winner/loser bets at the end of the game. 
+Strategy tip: Partner with someone who has a promising betting ticket that you don't have, or someone who is likely to earn a reliable pyramid-ticket reward. The partnership action costs you a turn, so make sure the potential copied reward is worth it.
+
+14. Strategy tips for beginners
+- Bet early when you see a good opportunity. The first leg-betting ticket for a camel is the most valuable, but it is also risky if that camel doesn't win.
+- Pay attention to camel stacks. A camel buried underneath another camel can move forward when the camel above it moves, but it cannot carry the upper camel when it moves itself.
+- Don't overlook pyramid tickets. They provide guaranteed income at leg scoring and give you information about which dice have already been used.
+- Use spectator tiles strategically. Place an cheering where a useful stack might land, or a booing where you want to disrupt a leading stack.
+- Be careful with overall bets. Your earliest correct overall prediction earns the largest reward, but a wrong bet loses money.
+- Watch the dice remaining in the pyramid. Once a camel's die has been revealed for the leg, it cannot move again until the next leg begins, so you can narrow down the possible remaining movements.
+- Keep an eye on the finish line. Once a camel crosses it, the game ends immediately. Don't wait to take a final action if you suspect the race is about to finish.
+For the official edition-specific rules, see the Camel Up publisher's page and rulebook downloads. 
+
+Camel Up: 2nd Edition
+
+The golden rule to remember: You are not trying to make one camel win by controlling it. You are trying to read the race, anticipate how the stacks will move, and place the most profitable bets before everyone else does.

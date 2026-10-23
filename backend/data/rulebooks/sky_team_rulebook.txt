@@ -1,0 +1,215 @@
+SKY TEAM — RULES AND GAMEPLAY GUIDE
+===================================
+A practical guide to the base game
+Players: 2 | Playing time: about 20 minutes | Cooperative
+
+This is an original summary of the rules for learning and reference, not a replacement for the publisher's rulebook. It describes the basic Montréal–YUL scenario. Other airports and Flight Log scenarios introduce additional rules and components.
+
+OFFICIAL RULES
+Publisher: Le Scorpion Masqué
+Official game page: https://www.scorpionmasque.com/en/sky-team
+Official English rulebook: https://cdn.shopify.com/s/files/1/0629/2114/6456/files/st_rules01_en_06jun2023.pdf?v=1769190266
+
+1. THE OBJECTIVE
+---------------
+Sky Team is a cooperative game for exactly two players. One player is the Pilot (blue dice) and the other is the Co-Pilot (orange dice). Together, you must land your airliner safely.
+
+You have seven rounds as the plane descends from 6,000 feet. You must coordinate dice placement without discussing your dice after rolling. To win, you must reach the airport at the correct time, clear all nearby air traffic, keep the plane level, deploy every flap and landing-gear switch, and have enough braking strength to stop.
+
+You immediately lose if the plane spins, collides with another plane, overshoots the airport, or reaches the end of the altitude track without meeting the landing conditions.
+
+2. COMPONENTS
+-------------
+The basic game uses:
+- Control Panel and Airplane Axis disc
+- Four blue Pilot dice and four orange Co-Pilot dice
+- Player screens / reference aids
+- Altitude track and Montréal–YUL Approach track
+- Airplane tokens representing traffic
+- Blue and orange Aerodynamics markers
+- Red Brake marker and switches for flaps, landing gear, and brakes
+- Coffee tokens
+- Reroll tokens
+
+Other components are for optional modules and scenarios. Follow the publisher's first-time assembly instructions for stickers and switches before playing.
+
+3. SETUP: BASIC MONTRÉAL SCENARIO
+---------------------------------
+1. Put the Control Panel between the players. Point the Axis arrow at the black triangle (the level starting position).
+2. Put every switch over its green light, showing that the flaps and landing gear have not yet been deployed and brakes are not yet activated.
+3. Place the blue Aerodynamics marker between 4 and 5 on the Speed Gauge; place the orange marker between 8 and 9.
+4. Place the red Brake marker to the left of 2 on the Brake track.
+5. The player at the blue side is the Pilot and takes four blue dice. The player at the orange side is the Co-Pilot and takes four orange dice.
+6. Insert the green/yellow side of the Altitude track so that 6,000 is visible. This is the starting altitude.
+7. Insert the Montréal–YUL Approach track so its starting plane icon is visible in the Current Position window.
+8. Put a Reroll token on each reroll icon on the Altitude track.
+9. Put airplane traffic tokens on the Approach track according to the traffic icons printed on its spaces.
+10. Place the three Coffee tokens in a supply beside the board.
+11. Each player takes a screen and reads the reminders printed on it.
+
+4. GAME STRUCTURE
+-----------------
+The game lasts seven rounds, corresponding to the seven altitude steps. Each round has three phases:
+
+PHASE A — Strategy discussion and dice rolls
+PHASE B — Dice placement
+PHASE C — End of round
+
+At the beginning of a round, the arrow in the Current Altitude window indicates who places the first die. In the first round, the Pilot goes first.
+
+PHASE A: DISCUSS, THEN ROLL
+---------------------------
+Before rolling, you may discuss your general plan: for example, whether you need to clear traffic, deploy a flap, or move the plane one space. You may not discuss specific dice or tell your partner what to do based on a particular value.
+
+Each player then rolls all four of their dice behind their screen, so the other player cannot see the results.
+
+From the moment the dice are rolled until all eight dice have been placed and the round ends, both players must remain silent, except to correct a rules mistake. You may not reveal, hint at, or discuss your rolled values.
+
+REROLL TOKENS
+At the start of a round, if the current altitude space contains a Reroll token, take it into the shared supply. During the round, either player may spend a Reroll token to reroll any number of their own dice still behind their screen. The token allows both players to reroll any number of their own unplaced dice once; each player chooses which of their own dice to reroll. Spent tokens are not returned unless a scenario says otherwise.
+
+PHASE B: PLACE DICE
+-------------------
+Players alternate turns, beginning with the player indicated by the altitude arrow. On your turn, place exactly one of your remaining dice from behind your screen onto one empty space on the Control Panel.
+
+You must obey all space restrictions:
+- Colour: the Pilot may use blue spaces; the Co-Pilot may use orange spaces. Spaces marked for both colours may be used by either.
+- Number: some spaces only accept specific die values or ranges.
+- Occupancy: a space may contain only one die.
+
+A die cannot be moved after placement. You may spend Coffee tokens when placing a die (see below).
+
+MANDATORY ACTIONS
+Every round must have one blue and one orange die on the Axis spaces, and one blue and one orange die on the Engine spaces. These are mandatory but need not be the first actions taken. If the round ends without both colours on both the Axis and Engine spaces, you immediately lose.
+
+5. THE CONTROL PANEL ACTIONS
+----------------------------
+
+A. AXIS — KEEP THE PLANE LEVEL
+Each player must place one die in their colour's Axis space. As soon as the second Axis die is placed, compare the two values:
+- If equal, do not move the Axis.
+- If different, rotate the Axis toward the player who played the higher die by a number of marks equal to the difference between the dice.
+The Axis position carries over from round to round; it does not reset automatically.
+
+If the Axis arrow reaches or passes a marked spin danger zone, the plane spins out and you immediately lose. At the end of the final round, the plane must be completely horizontal (level).
+
+B. ENGINES — CONTROL SPEED AND DISTANCE
+Each player must place one die in their colour's Engine space. As soon as the second Engine die is placed, add the values. This sum is the plane's speed for the round. Compare it with the two Aerodynamics markers on the Speed Gauge:
+- Below the blue (lower) marker: advance 0 spaces.
+- Between the blue and orange markers: advance 1 space.
+- Above the orange (higher) marker: advance 2 spaces.
+
+The Approach track moves immediately when the second Engine die is placed. Watch the Current Position and traffic:
+- If the plane advances into a space containing airplane traffic tokens, that alone is not a collision.
+- If the plane must advance while traffic is in its current position, you collide and lose.
+- If the airport is already in the Current Position window and you must advance farther, you overshoot and lose.
+
+The landing gear and flaps shift the Aerodynamics markers, changing how the same engine total affects movement.
+
+C. LANDING GEAR — DEPLOY ALL GEAR
+Place a die of an allowed value on an available Landing Gear space. The order does not matter. After placing the die, flip that switch to show its green light and immediately move the blue Aerodynamics marker one step forward.
+
+All Landing Gear switches must show green by the end of the game. If a switch is already green, placing a die there has no effect; you still must use a legal, unused space as indicated by the board.
+
+D. FLAPS — DEPLOY IN ORDER
+Place a die of an allowed value on the next available Flaps space. Flaps must be deployed from top to bottom, beginning with the first space. After placing the die, flip that switch to show green and immediately move the orange Aerodynamics marker one step forward.
+
+All Flaps switches must show green by the end of the game. Follow the printed value restrictions on each space.
+
+E. RADIO — CLEAR AIR TRAFFIC
+The Pilot has one Radio space and the Co-Pilot has two. Place a die in a Radio space of your colour; any die value is allowed. Immediately count forward from the plane's current position by the number shown on the die, counting the current position as space 1. Remove one airplane traffic token from the indicated space if one is present. If there is no token there, the action has no effect.
+
+The victory condition requires removing all airplane traffic tokens from the Approach track before the landing is completed. Plan Radio actions ahead, since the die value determines which space is targeted.
+
+F. CONCENTRATION — MAKE COFFEE
+Either player may place any die value in any free Concentration space. Immediately add one Coffee token to the shared supply on the Control Panel, up to a maximum of three tokens.
+
+Whenever either player places a die anywhere on the Control Panel, they may spend one or more Coffee tokens to adjust that die's value: each token adds 1 or subtracts 1. You may use multiple tokens on one die. A die's value cannot be changed below 1 or above 6; 1 does not wrap to 6 and 6 does not wrap to 1. Coffee can be used by either player, regardless of who created it. Unspent Coffee tokens carry over to later rounds.
+
+G. BRAKES — PREPARE TO STOP
+Brakes are only evaluated in the final round. Place a die of the required value on the next Brake space, starting with 2, then 4, then 6. The spaces must be filled in that order. Each successful placement advances the red Brake marker one step.
+
+You do not have to deploy all three brakes, but the Brake marker cannot remain below 2 or the plane cannot stop safely. In the final round, your Engine total must be strictly less than the value indicated by the red Brake marker.
+
+6. PHASE C: END OF ROUND
+------------------------
+After all eight dice have been placed:
+1. You may speak again.
+2. Advance the Altitude track by one step (1,000 feet).
+3. Take back all eight dice.
+4. If the Current Position window shows the airport and the Current Altitude window shows the airplane icon, you have reached the final landing round. Otherwise, begin another round.
+
+The plane descends every round whether or not it moved along the Approach track. You cannot choose to skip an altitude step.
+
+7. REACHING THE AIRPORT
+-----------------------
+There are two important timing cases:
+
+AIRPORT REACHED TOO EARLY
+If the airport appears in the Current Position window before the airplane icon appears in the Current Altitude window, you are in a holding pattern. Continue playing rounds, but you must not advance any farther along the Approach track. Reduce speed as needed. If the plane is forced to advance beyond the airport, you overshoot and lose.
+
+AIRPLANE REACHES LANDING ALTITUDE TOO SOON
+If the airplane icon appears in the Current Altitude window but the airport is not in the Current Position window, you have failed to reach the airport in time and lose.
+
+The final round begins when the airport is in the Current Position window and the airplane icon is in the Current Altitude window.
+
+8. FINAL LANDING: WIN CONDITIONS
+--------------------------------
+At the end of the final round, you win only if every condition below is satisfied:
+1. There are no airplane traffic tokens left on the Approach track.
+2. Every Flaps switch shows green.
+3. Every Landing Gear switch shows green.
+4. The Airplane Axis is completely horizontal.
+5. Your Engine dice total (speed) is strictly lower than the strength shown by the red Brake marker.
+
+During the final round, when the second Engine die is placed, do not use the Aerodynamics markers to decide how far to move. Instead, compare the Engine total directly with the Brake marker. If the airport is already in the Current Position window, do not advance the Approach track; the engine total must simply satisfy the braking condition. If any victory condition is not met, the landing fails.
+
+9. IMMEDIATE LOSS CONDITIONS
+---------------------------
+You lose immediately if:
+- The Axis reaches or passes a spin danger zone.
+- You must advance along the Approach track when traffic is in your current position (collision).
+- You must advance beyond the airport (overshoot).
+- The airplane reaches its final altitude but the airport has not been reached.
+- A round ends without one die of each colour on both the Axis and Engines.
+- The final landing conditions are not all satisfied.
+
+10. PRACTICAL STRATEGY
+----------------------
+- Plan before rolling, but do not discuss dice values or give instructions based on them after the roll.
+- The mandatory Axis and Engine dice are the backbone of every round. Think about what totals and differences you can tolerate.
+- Keep the Axis near level. Large differences between the two Axis dice can create dangerous tilt; sometimes matching values is best.
+- Track the two Aerodynamics markers. Deploying landing gear moves the blue marker; deploying flaps moves the orange marker. This changes how much distance an engine total produces.
+- Clear traffic with Radio actions before it becomes dangerous. A traffic token in your current position is especially urgent if the plane needs to move.
+- Use Coffee tokens to turn a nearly useful die into the exact number needed for a restricted space or to adjust an Axis/Engine result.
+- Use rerolls thoughtfully. Rerolling can improve a die but can also remove a value you were relying on.
+- Deploy flaps in order, and remember that landing gear and flaps must all be complete by the end.
+- Reach the airport at the correct altitude, not merely as early as possible. If you arrive early, keep the plane from advancing while it descends.
+- Prepare the brakes before the final round if possible. A stronger Brake marker gives you more flexibility, because the final Engine total must be lower than it.
+
+11. SCENARIOS AND EXPANSIONS
+----------------------------
+The basic Montréal–YUL landing teaches the core rules. The Flight Log booklet adds airports and scenarios with different Approach tracks and special rules. Advanced modules can add conditions such as wind, kerosene management, traffic variations, and other challenges. The expansion Sky Team: Turbulence adds further scenarios and modules.
+
+For any scenario other than the basic Montréal setup, follow the setup and special rules printed for that scenario. Scenario-specific instructions take precedence over the basic rules where they differ.
+
+12. QUICK REFERENCE
+-------------------
+EACH ROUND:
+1. Discuss general strategy.
+2. Roll four dice each behind screens.
+3. Stay silent.
+4. Alternate placing one die at a time, respecting colour, value, and occupancy restrictions.
+5. Each round: one blue + one orange die on Axis, and one blue + one orange die on Engines.
+6. After eight dice: speak, descend 1,000 feet, retrieve dice, check whether the final landing round has begun.
+
+FINAL LANDING CHECKLIST:
+[ ] No traffic tokens remain.
+[ ] All Flaps switches are green.
+[ ] All Landing Gear switches are green.
+[ ] Axis is horizontal.
+[ ] Engine total is lower than Brake strength.
+
+If every box is checked at the end of the final round, you land successfully!
+
+Source checked: Official Sky Team base-game rulebook and publisher page, Le Scorpion Masqué. This guide summarizes the basic game; consult the official rulebook for diagrams, exact component placement, and scenario-specific exceptions.
