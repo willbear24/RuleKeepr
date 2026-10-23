@@ -10,6 +10,7 @@ services:
       UPLOAD_DIR: /uploads
       CHROMA_HOST: chromadb
       CHROMA_PORT: 8000
+      CHROMA_PATH: /app/chroma_data
       OLLAMA_URL: http://ollama:11434
       LLM_MODEL: ${LLM_MODEL:-llama3.2}
       JWT_SECRET: ${JWT_SECRET:?Set JWT_SECRET in .env}

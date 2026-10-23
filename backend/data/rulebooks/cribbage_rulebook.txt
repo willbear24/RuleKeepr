@@ -1,21 +1,26 @@
 CRIBBAGE
 
+SETUP AND CARDS
 Number of Players:  Two 
 
 The Pack  The standard 52-card pack is used. 
 
 Rank of Cards  K (high), Q, J, 10, 9, 8, 7, 6, 5, 4, 3, 2, A. 
 
+THE DEAL
 The Draw, Shuffle and Cut  The dealer shuffles the deck face down and presents it to the non-dealer for the cut. The non-dealer cuts the deck, leaving at least four cards at either end of the pack. If both players cut cards of the same rank, they each draw again. The player with the lower card deals the first hand. If another game is played, the loser of the previous game deals first.   The dealer has the right to shuffle last and presents the deck for the non-dealer to cut before dealing. 
 
 The Deal:  The dealer distributes six cards face down to each player, beginning with the opponent. 
 
+OBJECT OF THE GAME
 Object of the Game: The goal is to be the first player to score 121 points. 
 
+THE CRIB AND THE CUT
  The Crib:  Each player looks at their six cards and lays away two of them face down, leaving four cards in hand. These four discarded cards, two from each player, form the "crib." The crib belongs to the dealer and is set aside until after the hands are played. It will be counted later as part of the dealer’s score. 
 
 Before the Play:  After the crib is laid away, the non-dealer cuts the deck. The dealer turns up the top card of the lower packet and places it face up as the starter. If the starter is a Jack, it is called "His Heels," or "Nibs" and the dealer pegs (scores) 2 points immediately. The starter is not used in the play phase of Cribbage , but is used later for making various card combinations that score points. 
 
+THE PLAY
 The Play:  After the starter is turned up, players alternate playing cards face-up, starting with the non-dealer. Each player announces the running total as they play their cards. The total can never exceed 31. 
 
 Cards 2-10 count as their pip value (numerical value), face cards (J, Q, K) count as 10, and Aces count as 1. 
@@ -28,6 +33,7 @@ After a "Go," the opponent leads the next round, starting from zero. The player 
 
 The Go:  If a player cannot play a card without going over 31, they say “Go,” and the opponent pegs 1 point. If the opponent can play a card to make the total exactly 31, they peg 2 points instead of 1. After a “Go,” the opponent starts the next round, with the total resetting to zero. The player who plays the last card in the sequence pegs 1 point for "Go" and 2 points if they reach 31.   Pegging  The goal during the play is to score points by pegging. Points can be scored by forming combinations during play: 
 
+SCORING DURING THE PLAY
 Fifteen: If the total reaches 15, peg 2 points. 
 
 Pair: If you play a card that matches the last card played, peg 2 points. 
@@ -54,8 +60,7 @@ Example 1: If the cards are played as 8, 7, 7, 6, the dealer cannot peg for a ru
 
 Example 2: If the cards are played as 9, 6, 8, 7, the dealer can peg for a run (6, 7, 8, 9), even though they weren’t played in order. 
 
-Counting the Hands 
-
+COUNTING THE HANDS
 After the play ends, the hands and the crib are counted in this order: 
 
 Non-dealer’s hand (first) 
@@ -90,8 +95,7 @@ The total score for this hand is 16 points.
 
 Note: The ace is always low and cannot form a sequence with the king. A flush only counts when the hands and crib are scored (not during play). 
 
-Common Scoring Formulas 
-
+COMMON SCORING FORMULAS
 - A triplet (three of a kind) counts 6 points. 
 - Four of a kind counts 12 points. 
 - A run of three cards (with one card duplicated) counts 8 points. 
@@ -99,7 +103,8 @@ Common Scoring Formulas
 - A run of three cards (with one card triplicated) counts 15 points. 
 - A run of three cards (with two different cards duplicated) counts 16 points. 
 
-A Perfect 29!  The highest possible score in a single Cribbage hand is 29 points. To achieve this, the player must have: 
+A PERFECT 29
+The highest possible score in a single Cribbage hand is 29 points. To achieve this, the player must have: 
 The starter card is a 5. 
 Three additional fives and the Jack of the same suit as the starter. 
 Here's how the score adds up: 
@@ -108,17 +113,20 @@ Double Pair Royal: Four 5s score 12 points.
 The fives can make 15 in four different ways, adding 8 points. 
 The Jack + 5 also makes 15, adding another 8 points.  Total: 29 points. 
 
+WINNING THE GAME
 Game:  The goal is to be the first player to reach 121 points. The game ends as soon as a player hits 121 points, either by pegging or counting their hand. If a player wins before the other player has reached the halfway point (61 points), the loser is considered "lurched," and the winner scores two games instead of one.   The Cribbage Board  The Cribbage board has four rows of 30 holes each, divided into two pairs of rows by a central panel. There are usually four (or two) additional holes near one end, called "game holes." With the board come four pegs, usually in two contrasting colors.  The board is placed to one side between the two players, and each player takes two pegs of the same color. The pegs are placed in the game holes until the game begins. How to Use the Pegs: Each time a player scores, they advance a peg along a row on their side of the board, counting one hole per point. Players use two pegs, and the rearmost peg jumps over the front peg to show the first increment in score. After another increase in score, the back peg jumps over the front peg again to show the new score. This process continues as points are scored. 
 
 Example: If your front peg is on hole 15, and you score 5 points, your front peg moves to hole 20. If you score another 10 points, your front peg moves to hole 30. When you score again, your back peg jumps over the front peg to the correct new position, say hole 35, while the front peg remains at hole 30. 
 
 The custom is to "go down" (away from the game holes) on the outer rows and "come up" on the inner rows. A game of 121 points is "twice around."  Strategy Tips 
 
+STRATEGY
 The Crib: The dealer should discard strong cards but keep good scoring cards in hand. The non-dealer should aim to discard cards that don’t help the dealer. Avoid discarding 5s, pairs, or sequential cards that may help the dealer form runs or make 15s. Aces and Kings are generally safer for the crib as they are harder to use in runs. 
 
 The Play Leading with a five is risky, as the opponent can pair it with a 10-card to make 15. Leading from a pair can be a good idea, especially if you can follow up with the other matching card from your hand to form a pair royal. Avoid leading with an ace or a two—these are best saved for later to help form 15s, 31s, or to secure a “Go.” A four is one of the safest leads because it cannot immediately form a 15 with the opponent’s next card. When your opponent leads a card that can form a pair or a 15, it’s usually better to go for the 15, as it scores more points. During the play, it’s best not to aim for exactly 21, as your opponent can respond with a 10-card and make 31 for an additional two points. 
 
-VARIATIONS Shorter Game:  For a shorter game duration, play to 61 points. 
+VARIATIONS
+Shorter Game:  For a shorter game duration, play to 61 points. 
 
 Muggins:  In Muggins, at the end of the game, players must count their own hand and crib aloud and announce the total score. If a player misses any points while counting, their opponent can shout "Muggins" and claim those points for themselves. This rule adds excitement, especially for experienced players, and encourages careful counting. Muggins is always in effect in competitive play. 
 
