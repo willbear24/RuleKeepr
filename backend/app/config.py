@@ -22,7 +22,7 @@ class Settings(BaseSettings):
 
     # LLM (Ollama)
     ollama_url: str = "http://localhost:11434"
-    llm_model: str = "llama3.1:8"
+    llm_model: str = "qwen2.5:14b"
 
     # Auth: No default for the secret so the app will refuse to start without one
     jwt_secret: str

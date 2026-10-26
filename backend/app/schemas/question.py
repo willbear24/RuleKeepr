@@ -2,6 +2,8 @@ from datetime import datetime
 
 from pydantic import BaseModel, ConfigDict, Field
 
+from backend.app.schemas.chunk import SourceChunk
+
 
 class QuestionCreate(BaseModel):
     model_config = ConfigDict(str_strip_whitespace=True)
@@ -17,3 +19,9 @@ class QuestionResponse(BaseModel):
     asked_at: datetime
 
     model_config = ConfigDict(from_attributes=True)
+
+
+class QuestionAnswerResponse(QuestionResponse):
+    """Returned when a question is asked; sources are not stored."""
+
+    sources: list[SourceChunk] = []

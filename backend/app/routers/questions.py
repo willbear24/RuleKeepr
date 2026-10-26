@@ -6,7 +6,13 @@ from backend.app.limiter import limiter
 from backend.app.models.question import Question
 from backend.app.models.user import User
 from backend.app.routers.sessions import _get_session_or_404
-from backend.app.schemas.question import QuestionCreate, QuestionResponse
+from backend.app.models.game import Game
+from backend.app.schemas.question import (
+    QuestionAnswerResponse,
+    QuestionCreate,
+    QuestionResponse,
+)
+from backend.app.services.rag import answer_question
 from backend.app.services.security import get_current_user
 from backend.app.utils.exceptions import AppException, NotFoundException
 
@@ -38,7 +44,7 @@ def _get_question_or_404(
 # CREATE
 @router.post(
     "/",
-    response_model=QuestionResponse,
+    response_model=QuestionAnswerResponse,
     status_code=status.HTTP_201_CREATED,
     responses={
         401: {"description": "Authentication is required."},
@@ -46,6 +52,7 @@ def _get_question_or_404(
         409: {"description": "The play session has already ended."},
         422: {"description": "The question payload failed validation."},
         429: {"description": "Too many requests from this client."},
+        503: {"description": "The language model or rulebook search is down; the question is saved without an answer."},
     },
     summary="Ask a question in a play session.",
 )
@@ -76,7 +83,18 @@ def create_question(
     db.add(new_question)
     db.commit()
     db.refresh(new_question)
-    return new_question
+
+    # The question is saved before answering, so a failure here keeps it with no answer.
+    game = db.get(Game, play_session.game_id)
+    result = answer_question(payload.question_text, game.id, game.title)
+
+    new_question.answer_text = result.answer
+    db.commit()
+    db.refresh(new_question)
+    return QuestionAnswerResponse(
+        **QuestionResponse.model_validate(new_question).model_dump(),
+        sources=result.sources,
+    )
 
 
 # READ

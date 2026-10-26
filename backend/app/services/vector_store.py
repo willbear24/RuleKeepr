@@ -2,6 +2,7 @@ import chromadb
 
 from backend.app.config import settings
 from backend.app.schemas.chunk import SourceChunk
+from backend.app.services.chunker import chunk_rulebook
 
 COLLECTION_NAME = "rulebooks"
 
@@ -45,9 +46,39 @@ def retrieve(
                     game_id=meta["game_id"],
                     game_title=meta["game_title"],
                     chunk_index=meta["chunk_index"],
-                    section=meta.get("section"),
+                    section=meta.get("section") or None,
                     text=document,
                     score=round(1 - dist, 4),
                 )
             )
     return chunks
+
+
+def ingest_game(game_id: int, title: str, text: str) -> int:
+    """Chunk one rulebook and store it in ChromaDB, replacing any earlier version.
+
+    Returns the number of chunks stored. Safe to re-run.
+    """
+    chunks = chunk_rulebook(text)
+    collection = get_collection()
+
+    # Delete first so a shorter rewrite doesn't leave stale chunks behind.
+    collection.delete(where={"game_id": game_id})
+    if not chunks:
+        return 0
+
+    collection.upsert(
+        ids=[f"{game_id}-{chunk.index}" for chunk in chunks],
+        documents=[chunk.text for chunk in chunks],
+        metadatas=[
+            {
+                "game_id": game_id,
+                "game_title": title,
+                "chunk_index": chunk.index,
+                # Chroma metadata can't hold None.
+                "section": chunk.section or "",
+            }
+            for chunk in chunks
+        ],
+    )
+    return len(chunks)

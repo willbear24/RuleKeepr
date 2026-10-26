@@ -30,3 +30,8 @@ class ForbiddenException(AppException):
     """Insufficient permissions (403)."""
     def __init__(self, detail: str = "You don't have permission"):
         super().__init__(detail=detail, status_code=403)
+
+class ServiceUnavailableException(AppException):
+    """A backing service such as the LLM is unreachable (503)."""
+    def __init__(self, detail: str = "A required service is unavailable"):
+        super().__init__(detail=detail, status_code=503)
