@@ -13,3 +13,4 @@ __pycache__/
 email_log.txt
 chroma_data/
 chroma_data/
+tests

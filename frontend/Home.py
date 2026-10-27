@@ -83,7 +83,6 @@ with st.sidebar:
         st.rerun()
 
 
-
 # --- Dashboard ---
 st.subheader("RuleKeepr knows the rules, so you can rule the game")
 
@@ -117,7 +116,7 @@ col5.metric("Time played", f"{total_minutes_played(sessions):,} min")
 
 # --- Add games ---
 st.divider()
-st.subheader("Add a game to your shelf")
+st.subheader("Add a game to your Gameshelf")
 
 # Set before st.rerun() on a successful add; shown once, then cleared.
 added_title = st.session_state.pop("added_game", None)
@@ -140,12 +139,12 @@ else:
         col_image, col_info, col_btn = st.columns([1, 4, 1])
         image_path = game_image(game["title"])
         if image_path:
-            col_image.image(image_path, width='stretch')
+            col_image.image(image_path, width="stretch")
         col_info.markdown(f"**{game['title']}**")
         col_info.caption(
             f"{game['min_player']}-{game['max_player']} players · {game['play_time_minutes']} min"
         )
-        if col_btn.button("Add", key=f"add_{game['id']}"):
+        if col_btn.button("Add Game", key=f"add_{game['id']}"):
             try:
                 add_to_shelf(token, game["id"])
                 st.session_state["added_game"] = game["title"]

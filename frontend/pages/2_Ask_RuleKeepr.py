@@ -1,5 +1,6 @@
 import streamlit as st
 from api_client import ApiError, ask_question, list_questions, list_sessions, my_games
+from ui import format_timestamp
 
 st.set_page_config(page_title="Ask RuleKeepr", page_icon="🎲")
 
@@ -31,7 +32,8 @@ if not in_progress:
 def describe_session(session_id):
     session = in_progress[session_id]
     title = titles.get(session["game_id"], "Unknown game")
-    return f"{title} · started {session['started_at']} UTC"
+
+    return f"{title} · Started {format_timestamp(session['started_at'])}"
 
 
 session_id = st.selectbox(

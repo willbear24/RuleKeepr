@@ -41,7 +41,8 @@ def answer_question(question: str, game_id: int, game_title: str) -> RagAnswer:
     Raises ServiceUnavailableException if the LLM is unreachable.
     """
     try:
-        retrieved = retrieve(question, game_id, n_results=N_RESULTS)
+        # Short questions often omit the game name, which weakens the match against rulebook text.
+        retrieved = retrieve(f"{game_title}: {question}", game_id, n_results=N_RESULTS)
     except Exception:
         raise ServiceUnavailableException("The rulebook search is unavailable")
     chunks = [c for c in retrieved if c.score is not None and c.score >= MIN_SCORE]

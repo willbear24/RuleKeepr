@@ -1,0 +1,6 @@
+.venv
+__pycache__
+chroma_data
+tests
+.DS_Store
+pytest.ini
