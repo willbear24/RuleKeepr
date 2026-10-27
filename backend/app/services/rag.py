@@ -5,8 +5,9 @@ from backend.app.services.llm_client import chat
 from backend.app.services.vector_store import retrieve
 from backend.app.utils.exceptions import ServiceUnavailableException
 
-# Chunks scoring below this were off-topic in retrieval spot checks.
-MIN_SCORE = 0.3
+# Chunks scoring below this were weak matches in retrieval spot checks; the prompt
+# still refuses when the excerpts don't answer the question.
+MIN_SCORE = 0.25
 N_RESULTS = 5
 
 NOT_COVERED = "I couldn't find anything in the rulebook that answers that."
@@ -15,7 +16,8 @@ SYSTEM_PROMPT = (
     "You are a board game rules assistant. Answer the player's question using ONLY the rulebook excerpts provided. "
     "If the excerpts don't contain the answer, reply "
     f'exactly: "{NOT_COVERED}" Do not use outside knowledge or guess. '
-    "Be concise and, when helpful, mention the section name you relied on."
+    "Answer the whole question. If it involves several steps or options, list every one in order, "
+    "and mention the section name you relied on."
 )
 
 

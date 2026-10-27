@@ -10,7 +10,7 @@ from api_client import (
     list_questions,
     update_rating,
 )
-from ui import game_image, live_timer, minutes_played
+from ui import format_timestamp, game_image, live_timer, minutes_played
 
 st.set_page_config(page_title="Play Log", page_icon="📓")
 
@@ -60,7 +60,7 @@ def render_session(session):
         if image_path:
             col_image.image(image_path, width="stretch")
         col_info.subheader(game_title)
-        col_info.caption(f"Started {session['started_at']} UTC")
+        col_info.caption(f"Started {format_timestamp(session['started_at'])}")
         if session["ended_at"] is None:
             live_timer(session["started_at"])
             if col_info.button("End session", key=f"stop_{session_id}"):
@@ -73,7 +73,7 @@ def render_session(session):
                 except ApiError as error:
                     st.error(error.message)
         else:
-            col_info.caption(f"Ended {session['ended_at']} UTC")
+            col_info.caption(f"Ended {format_timestamp(session['ended_at'])}")
             col_info.caption(f"Played {minutes_played(session)} min")
         st.divider()
         if session["ended_at"]:
@@ -110,15 +110,18 @@ def render_session(session):
             )
             save_button = st.form_submit_button(label="Save notes")
         if save_button:
-            try:
-                update_notes(token, session_id, note_input)
-            except ApiError as error:
-                st.error(error.message)
+            if not note_input.strip():
+                st.error("Enter something in the notes before saving.")
             else:
-                # Rerun so the text area is rebuilt with the saved notes as its default.
-                # Otherwise the changed default resets the box on the next save.
-                st.session_state["toast_message"] = "Notes saved."
-                st.rerun()
+                try:
+                    update_notes(token, session_id, note_input)
+                except ApiError as error:
+                    st.error(error.message)
+                else:
+                    # Rerun so the text area is rebuilt with the saved notes as its default.
+                    # Otherwise the changed default resets the box on the next save.
+                    st.session_state["toast_message"] = "Notes saved."
+                    st.rerun()
 
 
 tab1, tab2 = st.tabs(

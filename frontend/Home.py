@@ -83,6 +83,7 @@ with st.sidebar:
         st.rerun()
 
 
+
 # --- Dashboard ---
 st.subheader("RuleKeepr knows the rules, so you can rule the game")
 

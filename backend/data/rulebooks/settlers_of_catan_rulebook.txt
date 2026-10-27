@@ -82,7 +82,7 @@ Choose the first player according to the rulebook or agree on a starting player.
 -------------------
 On your turn, follow these steps:
 
-STEP 1 — ROLL FOR PRODUCTION
+Step 1 - Roll for production
 Roll both dice. The total identifies which terrain hexes produce resources.
 
 For every hex showing the rolled number:
@@ -94,7 +94,7 @@ If the robber is on a hex, that hex produces nothing while the robber remains th
 
 If the resource supply does not contain enough cards of a resource to pay every player what they are owed, no player receives any of that resource for that production roll.
 
-STEP 2 — TRADE
+Step 2 - Trade
 After production, you may trade resources. You may trade with other players and with the bank/harbors. You cannot give cards away for free; trades must exchange something for something.
 
 Domestic trade:
@@ -109,7 +109,7 @@ Maritime trade with the bank:
 - If you own a settlement or city at a 2:1 specialized harbor, you may trade 2 cards of that harbor's resource for 1 card of your choice.
 - Harbor rates apply only when you have a settlement or city connected to that harbor.
 
-STEP 3 — BUILD AND/OR BUY
+Step 3 — Build and/or buy
 Spend resources to build any number of legal pieces or buy a development card, as long as you can pay and have pieces available. You may trade and build in any order allowed by your edition's rules. You may not build a piece you have run out of.
 
 6. BUILDING COSTS

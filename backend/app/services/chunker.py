@@ -3,7 +3,7 @@ from dataclasses import dataclass
 
 # tl;dr Breaks rulebooks into chunks based on paragraphs and headings. Subheading should be grouped within larger headings and chunks will not trail into other sections to preserve accurate sourcing.
 
-MAX_WORDS = 200
+MAX_WORDS = 100
 MAX_HEADING_CHARS = 80
 
 

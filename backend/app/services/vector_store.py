@@ -47,7 +47,7 @@ def retrieve(
                     game_title=meta["game_title"],
                     chunk_index=meta["chunk_index"],
                     section=meta.get("section") or None,
-                    text=document,
+                    text=meta.get("text", document),
                     score=round(1 - dist, 4),
                 )
             )
@@ -69,7 +69,11 @@ def ingest_game(game_id: int, title: str, text: str) -> int:
 
     collection.upsert(
         ids=[f"{game_id}-{chunk.index}" for chunk in chunks],
-        documents=[chunk.text for chunk in chunks],
+        # The game and section are embedded with the text so questions match by topic;
+        # the clean text is kept in metadata for display.
+        documents=[
+            f"{title} - {chunk.section or 'General'}\n{chunk.text}" for chunk in chunks
+        ],
         metadatas=[
             {
                 "game_id": game_id,
@@ -77,6 +81,7 @@ def ingest_game(game_id: int, title: str, text: str) -> int:
                 "chunk_index": chunk.index,
                 # Chroma metadata can't hold None.
                 "section": chunk.section or "",
+                "text": chunk.text,
             }
             for chunk in chunks
         ],

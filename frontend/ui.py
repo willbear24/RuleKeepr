@@ -22,6 +22,12 @@ def game_image(title):
     return None
 
 
+def format_timestamp(value):
+    """Format an API timestamp (naive UTC) in local time, e.g. 'Oct 27, 2026 12:42 PM'."""
+    utc = datetime.fromisoformat(value).replace(tzinfo=timezone.utc)
+    return utc.astimezone().strftime("%b %d, %Y %-I:%M %p")
+
+
 def minutes_played(session):
     """Whole minutes between a session's start and end, or None if it's still running."""
     if session["ended_at"] is None:
@@ -34,7 +40,9 @@ def minutes_played(session):
 def total_minutes_played(sessions):
     """Sum of minutes across all finished sessions."""
     return sum(
-        minutes for minutes in (minutes_played(s) for s in sessions) if minutes is not None
+        minutes
+        for minutes in (minutes_played(s) for s in sessions)
+        if minutes is not None
     )
 
 
@@ -46,4 +54,6 @@ def live_timer(started_at):
     elapsed = int((now - datetime.fromisoformat(started_at)).total_seconds())
     hours, rest = divmod(max(elapsed, 0), 3600)
     minutes, seconds = divmod(rest, 60)
-    st.markdown(f"⏱️ **{hours:02d}:{minutes:02d}:{seconds:02d}** elapsed")
+    st.markdown(
+        f"Session Active: ⏱️ **{hours:02d}:{minutes:02d}:{seconds:02d}** elapsed"
+    )
