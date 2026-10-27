@@ -12,6 +12,7 @@ from api_client import (
     list_games,
     add_to_shelf,
 )
+from ui import game_image, total_minutes_played
 
 st.set_page_config(page_title="RuleKeepr", page_icon="🎲")
 st.title("RuleKeepr")
@@ -106,11 +107,12 @@ if play_counts:
 else:
     most_played, most_played_note = "None yet", None
 
-col1, col2, col3, col4 = st.columns(4)
+col1, col2, col3, col4, col5 = st.columns(5)
 col1.metric("Games on shelf", len(shelf))
 col2.metric("Sessions logged", len(sessions))
 col3.metric("In progress", len(in_progress))
 col4.metric("Most played", most_played, most_played_note, delta_color="off")
+col5.metric("Time played", f"{total_minutes_played(sessions):,} min")
 
 # --- Add games ---
 st.divider()
@@ -134,7 +136,10 @@ if not available:
     st.info("Every game in the catalog is already on your shelf.")
 else:
     for game in available:
-        col_info, col_btn = st.columns([4, 1])
+        col_image, col_info, col_btn = st.columns([1, 4, 1])
+        image_path = game_image(game["title"])
+        if image_path:
+            col_image.image(image_path, width='stretch')
         col_info.markdown(f"**{game['title']}**")
         col_info.caption(
             f"{game['min_player']}-{game['max_player']} players · {game['play_time_minutes']} min"

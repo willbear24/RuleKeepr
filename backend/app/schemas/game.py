@@ -30,13 +30,22 @@ class ShelfEntryCreate(BaseModel):
     model_config = ConfigDict(str_strip_whitespace=True)
 
     notes: str | None = Field(default=None, max_length=2000)
-    rating: int | None = Field(default=None, ge=1, le=5)
+    rating: float | None = Field(default=None, ge=0.25, le=5, multiple_of=0.25)
+
+
+class ShelfEntryUpdate(BaseModel):
+    """Fields a user can change on their own shelf entry."""
+
+    model_config = ConfigDict(str_strip_whitespace=True, extra="forbid")
+
+    notes: str | None = Field(default=None, max_length=2000)
+    rating: float | None = Field(default=None, ge=0.25, le=5, multiple_of=0.25)
 
 
 class ShelfEntryResponse(BaseModel):
     game: GameResponse
     notes: str | None = None
-    rating: int | None = None
+    rating: float | None = None
     added_at: datetime
 
     model_config = ConfigDict(from_attributes=True)

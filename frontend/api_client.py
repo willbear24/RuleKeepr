@@ -1,8 +1,9 @@
 import os
 import requests
+from pathlib import Path
 
 BASE_URL = os.getenv("BACKEND_URL", "http://localhost:8000")
-
+ASSETS = Path(__file__).parent/ "assets" / "games"
 
 class ApiError(Exception):
     """A readable error the UI can show with st.error()."""
@@ -61,6 +62,12 @@ def add_to_shelf(token, game_id):
     return _request("POST", f"/games/{game_id}/shelf", token, json={})
 
 
+def update_rating(token, game_id, rating):
+    return _request(
+        "PATCH", f"/games/{game_id}/shelf", token, json={"rating": rating}
+    )
+
+
 def remove_from_shelf(token, game_id):
     return _request("DELETE", f"/games/{game_id}/shelf", token)
 
@@ -101,3 +108,12 @@ def ask_question(token, session_id, text):
         timeout=90,
         json={"question_text": text},
     )
+
+def game_image(title):
+    """Return the image path for a game, or None if there isn't one."""
+    name = title.lower().replace(" ", "_")
+    for ext in (".png", ".jpg", ".jpeg", ".webp"):
+        path = ASSETS / f"{name}{ext}"
+        if path.exists():
+            return str(path)
+        return None

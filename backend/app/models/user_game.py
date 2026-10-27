@@ -1,4 +1,4 @@
-from sqlalchemy import Column, DateTime, ForeignKey, Integer, Text
+from sqlalchemy import Column, DateTime, Float, ForeignKey, Integer, Text
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql import func
 
@@ -11,7 +11,7 @@ class UserGame(Base):
     user_id = Column(Integer, ForeignKey("users.id"), primary_key=True)
     game_id = Column(Integer, ForeignKey("games.id"), primary_key=True)
     notes = Column(Text, nullable=True)
-    rating = Column(Integer, nullable=True)
+    rating = Column(Float, nullable=True)
     added_at = Column(DateTime, nullable=False, server_default=func.now())
 
     user = relationship("User", back_populates="user_games")

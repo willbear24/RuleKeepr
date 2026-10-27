@@ -10,6 +10,7 @@ from backend.app.schemas.game import (
     GameResponse,
     ShelfEntryCreate,
     ShelfEntryResponse,
+    ShelfEntryUpdate,
 )
 from backend.app.services.security import get_current_user
 from backend.app.utils.exceptions import DuplicateException, NotFoundException
@@ -149,6 +150,34 @@ def add_game_to_shelf(
         rating=details.rating,
     )
     db.add(entry)
+    db.commit()
+    db.refresh(entry)
+    return entry
+
+
+@router.patch(
+    "/{game_id}/shelf",
+    response_model=ShelfEntryResponse,
+    responses={
+        401: {"description": "Authentication is required."},
+        404: {"description": "The game does not exist or is not on the shelf."},
+        422: {"description": "The payload failed validation."},
+        429: {"description": "Too many requests from this client."},
+    },
+    summary="Update the rating or notes on a shelf entry.",
+)
+@limiter.limit("30/minute")
+def update_shelf_entry(
+    request: Request,
+    game_id: int,
+    details: ShelfEntryUpdate,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+) -> UserGame:
+    """Update only the fields that were sent; sending null clears a field."""
+    entry = _get_shelf_entry_or_404(game_id, db, current_user)
+    for field, value in details.model_dump(exclude_unset=True).items():
+        setattr(entry, field, value)
     db.commit()
     db.refresh(entry)
     return entry
