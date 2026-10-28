@@ -63,7 +63,8 @@ def render_session(session):
         col_info.caption(f"Started {format_timestamp(session['started_at'])}")
         if session["ended_at"] is None:
             live_timer(session["started_at"])
-            if col_info.button("End session", key=f"stop_{session_id}"):
+            end_col, ask_col = col_info.columns(2)
+            if end_col.button("End session", key=f"stop_{session_id}"):
                 try:
                     end_session(token, session_id)
                     st.session_state["toast_message"] = (
@@ -72,6 +73,11 @@ def render_session(session):
                     st.rerun()
                 except ApiError as error:
                     st.error(error.message)
+            ask_col.page_link(
+                "pages/2_Ask_RuleKeepr.py",
+                label="Ask RuleKeepr",
+                icon="🎲",
+            )
         else:
             col_info.caption(f"Ended {format_timestamp(session['ended_at'])}")
             col_info.caption(f"Played {minutes_played(session)} min")

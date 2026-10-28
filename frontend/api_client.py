@@ -3,7 +3,8 @@ import requests
 from pathlib import Path
 
 BASE_URL = os.getenv("BACKEND_URL", "http://localhost:8000")
-ASSETS = Path(__file__).parent/ "assets" / "games"
+ASSETS = Path(__file__).parent / "assets" / "games"
+
 
 class ApiError(Exception):
     """A readable error the UI can show with st.error()."""
@@ -28,7 +29,9 @@ def _request(method, path, token=None, timeout=15, **kwargs):
             detail = response.json().get("detail", "Something went wrong")
         except ValueError:  # non-JSON error body, e.g. a proxy error page
             detail = f"Server error ({response.status_code})"
-        raise ApiError(str(detail), response.status_code)  # 422 detail is a list, hence str()
+        raise ApiError(
+            str(detail), response.status_code
+        )  # 422 detail is a list, hence str()
     return response.json() if response.content else None  # DELETE gives 204, no body
 
 
@@ -63,9 +66,7 @@ def add_to_shelf(token, game_id):
 
 
 def update_rating(token, game_id, rating):
-    return _request(
-        "PATCH", f"/games/{game_id}/shelf", token, json={"rating": rating}
-    )
+    return _request("PATCH", f"/games/{game_id}/shelf", token, json={"rating": rating})
 
 
 def remove_from_shelf(token, game_id):
@@ -108,6 +109,7 @@ def ask_question(token, session_id, text):
         timeout=90,
         json={"question_text": text},
     )
+
 
 def game_image(title):
     """Return the image path for a game, or None if there isn't one."""
