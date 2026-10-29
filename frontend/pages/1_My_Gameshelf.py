@@ -39,7 +39,12 @@ if not shelf:
     st.page_link("Home.py", label="Go to Home")
     st.stop()
 
-sessions = list_sessions(token)
+try:
+    sessions = list_sessions(token)
+except ApiError as error:
+    st.error(error.message)
+    st.stop()
+
 counts = Counter(s["game_id"] for s in sessions)
 time_played = Counter()
 for s in sessions:

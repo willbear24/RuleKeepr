@@ -12,6 +12,14 @@ if st.session_state.get("token") is None:
 token = st.session_state["token"]
 st.title("Ask RuleKeepr")
 
+ask_error = st.session_state.pop("ask_rulekeepr_error", None)
+if ask_error:
+    st.error(ask_error)
+    st.warning(
+        "Your question may already have been saved. "
+        "Check the history before submitting it again."
+    )
+
 try:
     shelf = my_games(token)
     sessions = list_sessions(token)
@@ -75,7 +83,8 @@ if question:
         try:
             answer = ask_question(token, session_id, question)
         except ApiError as error:
-            st.error(error.message)
+            st.session_state["ask_rulekeepr_error"] = error.message
+            st.rerun()
         else:
             session_sources[str(answer["id"])] = answer["sources"]
             st.rerun()

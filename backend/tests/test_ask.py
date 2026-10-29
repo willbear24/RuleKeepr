@@ -1,8 +1,41 @@
+from unittest.mock import Mock
+
 import pytest
 
 from backend.app.routers import questions as questions_router
 from backend.app.schemas.chunk import SourceChunk
+from backend.app.services.llm_client import REQUEST_TIMEOUT_SECONDS
 from backend.app.services.rag import RagAnswer
+from backend.app.utils.exceptions import ServiceUnavailableException
+from frontend import api_client
+
+
+def test_ask_timeout_exceeds_backend_timeout(monkeypatch):
+    response = Mock(status_code=201, content=b"{}", json=lambda: {})
+    request = Mock(return_value=response)
+    monkeypatch.setattr(api_client.requests, "request", request)
+
+    api_client.ask_question("test-token", 7, "What happens when I pass Go?")
+
+    assert request.call_args.kwargs["timeout"] == 150
+    assert request.call_args.kwargs["timeout"] > REQUEST_TIMEOUT_SECONDS
+    assert request.call_args.args == (
+        "POST",
+        f"{api_client.BASE_URL}/sessions/7/questions/",
+    )
+    assert request.call_args.kwargs["json"] == {
+        "question_text": "What happens when I pass Go?"
+    }
+
+
+def test_other_requests_keep_default_timeout(monkeypatch):
+    response = Mock(status_code=200, content=b"[]", json=lambda: [])
+    request = Mock(return_value=response)
+    monkeypatch.setattr(api_client.requests, "request", request)
+
+    api_client.list_sessions("test-token")
+
+    assert request.call_args.kwargs["timeout"] == 15
 
 
 @pytest.fixture
@@ -24,6 +57,36 @@ def active_session(client, sample_game, auth_headers):
 
 
 class TestAskQuestion:
+    @pytest.mark.parametrize(
+        "message",
+        [
+            "The language model took too long to respond",
+            "The rulebook search is unavailable",
+        ],
+    )
+    def test_service_failure_preserves_question(
+        self, client, active_session, auth_headers, monkeypatch, message
+    ):
+        def unavailable(*_args):
+            raise ServiceUnavailableException(message)
+
+        monkeypatch.setattr(questions_router, "answer_question", unavailable)
+        url = f"/sessions/{active_session}/questions/"
+
+        response = client.post(
+            url,
+            headers=auth_headers,
+            json={"question_text": "What happens when I pass Go?"},
+        )
+
+        assert response.status_code == 503
+        assert response.json() == {"detail": message}
+        history = client.get(url, headers=auth_headers)
+        assert history.status_code == 200
+        assert len(history.json()) == 1
+        assert history.json()[0]["question_text"] == "What happens when I pass Go?"
+        assert history.json()[0]["answer_text"] is None
+
     def test_ask_question_returns_answer_and_sources(
         self, client, sample_game, active_session, auth_headers, monkeypatch
     ):

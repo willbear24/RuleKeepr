@@ -16,23 +16,36 @@ class ApiError(Exception):
 
 
 def _request(method, path, token=None, timeout=15, **kwargs):
+    """Return decoded JSON, raising ApiError for transport, HTTP, or JSON failures."""
     headers = {"Authorization": f"Bearer {token}"} if token else {}
     try:
         response = requests.request(
             method, f"{BASE_URL}{path}", headers=headers, timeout=timeout, **kwargs
         )
+    except requests.exceptions.Timeout as error:
+        raise ApiError("The RuleKeepr server took too long to respond.") from error
     except requests.exceptions.RequestException:
         raise ApiError("Can't reach the RuleKeepr server.")
 
     if response.status_code >= 400:
+        detail = f"Server error ({response.status_code})"
         try:
-            detail = response.json().get("detail", "Something went wrong")
+            body = response.json()
         except ValueError:  # non-JSON error body, e.g. a proxy error page
-            detail = f"Server error ({response.status_code})"
+            body = None
+        if isinstance(body, dict):
+            detail = body.get("detail", detail)
         raise ApiError(
             str(detail), response.status_code
         )  # 422 detail is a list, hence str()
-    return response.json() if response.content else None  # DELETE gives 204, no body
+    if not response.content:
+        return None  # DELETE gives 204, no body
+    try:
+        return response.json()
+    except ValueError as error:
+        raise ApiError(
+            "The RuleKeepr server returned an invalid response.", response.status_code
+        ) from error
 
 
 def register(name, email, password):
@@ -101,12 +114,12 @@ def list_questions(token, session_id):
 
 
 def ask_question(token, session_id, text):
-    # Generating an answer can take a while, especially on the model's first load.
+    # Allow 30 seconds beyond the backend's 120-second LLM timeout.
     return _request(
         "POST",
         f"/sessions/{session_id}/questions/",
         token,
-        timeout=90,
+        timeout=150,
         json={"question_text": text},
     )
 
