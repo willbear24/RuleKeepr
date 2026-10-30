@@ -8,7 +8,7 @@ from api_client import (
     end_session,
 )
 from collections import Counter
-from ui import game_image, live_timer, minutes_played
+from ui import format_play_time, game_image, live_timer, minutes_played
 
 st.set_page_config(page_title="My Gameshelf", page_icon="🎲")
 
@@ -160,7 +160,7 @@ for entry in shelf_view:
             live_timer(active["started_at"])
         metric_sessions, metric_time = col_info.columns(2)
         metric_sessions.metric("Sessions Logged", game_sessions)
-        metric_time.metric("Time Played", f"{time_played[game['id']]} min")
+        metric_time.metric("Time Played", format_play_time(time_played[game["id"]]))
         if col_btn.button("Remove", key=f"remove_{game['id']}"):
             confirm_remove(game["id"], game["title"], game_sessions)
         if active:

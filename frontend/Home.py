@@ -12,7 +12,7 @@ from api_client import (
     list_games,
     add_to_shelf,
 )
-from ui import game_image, total_minutes_played
+from ui import format_play_time, game_image, total_minutes_played
 
 st.set_page_config(page_title="RuleKeepr", page_icon="🎲")
 st.title("RuleKeepr")
@@ -112,7 +112,7 @@ col1.metric("Games on shelf", len(shelf))
 col2.metric("Sessions logged", len(sessions))
 col3.metric("In progress", len(in_progress))
 col4.metric("Most played", most_played, most_played_note, delta_color="off")
-col5.metric("Time played", f"{total_minutes_played(sessions):,} min")
+col5.metric("Time played", format_play_time(total_minutes_played(sessions)))
 
 # --- Add games ---
 st.divider()

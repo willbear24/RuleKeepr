@@ -46,6 +46,13 @@ def total_minutes_played(sessions):
     )
 
 
+def format_play_time(minutes: int) -> str:
+    """Show minutes below one hour and compact decimal hours otherwise."""
+    if minutes < 60:
+        return f"{minutes:,} min"
+    return f"{minutes / 60:,.1f} hr"
+
+
 @st.fragment(run_every=1)
 def live_timer(started_at):
     """Count up the time since an active session started, once per second."""

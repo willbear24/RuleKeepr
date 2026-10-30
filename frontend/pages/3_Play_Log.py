@@ -10,7 +10,7 @@ from api_client import (
     list_questions,
     update_rating,
 )
-from ui import format_timestamp, game_image, live_timer, minutes_played
+from ui import format_play_time, format_timestamp, game_image, live_timer, minutes_played
 
 st.set_page_config(page_title="Play Log", page_icon="📓")
 
@@ -80,7 +80,7 @@ def render_session(session):
             )
         else:
             col_info.caption(f"Ended {format_timestamp(session['ended_at'])}")
-            col_info.caption(f"Played {minutes_played(session)} min")
+            col_info.caption(f"Played {format_play_time(minutes_played(session))}")
         st.divider()
         if session["ended_at"]:
             current_rating = ratings.get(session["game_id"]) or 0

@@ -39,7 +39,7 @@ def chat(messages: list[dict[str, str]], temperature: float = 0.2) -> str:
             json={
                 "model": settings.llm_model,
                 "messages": messages,
-                "stream": True,
+                "stream": False,
                 "options": {"temperature": temperature},
             },
             timeout=REQUEST_TIMEOUT_SECONDS,
